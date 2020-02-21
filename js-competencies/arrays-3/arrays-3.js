@@ -11,6 +11,11 @@
 var sunsetColors = ["brown", "purple", "pink", "red", "orange", "yellow"]
 
 //Code here
+function sunset(){
+   const newColors = [...sunsetColors]
+    newColors.splice(0, 1, 'blue')
+    return newColors
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -22,7 +27,10 @@ var sunsetColors = ["brown", "purple", "pink", "red", "orange", "yellow"]
 var sunriseColors = ["yellow", "orange", "red", "pink", "purple", "blue"]
 
 //Code here
-
+function sunrise(){
+    newSunrise = sunriseColors.slice()
+    newSunrise.splice()
+}
 
 //////////////////PROBLEM 3////////////////////
 
