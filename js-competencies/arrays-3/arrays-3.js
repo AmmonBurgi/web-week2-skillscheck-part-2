@@ -12,24 +12,25 @@ var sunsetColors = ["brown", "purple", "pink", "red", "orange", "yellow"]
 
 //Code here
 function sunset(){
-   const newColors = [...sunsetColors]
-    newColors.splice(0, 1, 'blue')
-    return newColors
+   let copyArray = sunsetColors.slice()
+    copyArray.splice(0, 1, 'blue')
+    return copyArray
 }
+sunset()
 
 
 //////////////////PROBLEM 2////////////////////
 
-//Create a function called sunrise that copies the value of the existing array
-//sunriseColors and then changes the first element to "green". sunrise should 
-//return the copy of the array.
+// Create a function called sunrise that copies the value of the existing array
+// sunriseColors and then changes the first element to "green". sunrise should 
+// return the copy of the array.
 
 var sunriseColors = ["yellow", "orange", "red", "pink", "purple", "blue"]
 
 //Code here
 function sunrise(){
-    newSunrise = sunriseColors.slice()
-    newSunrise.splice()
+    newSunrise = [...sunriseColors]
+   return newSunrise.splice(0, 1, 'green')
 }
 
 //////////////////PROBLEM 3////////////////////

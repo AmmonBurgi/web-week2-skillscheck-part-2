@@ -10,32 +10,44 @@
 //use the built-in array method .map
   
   //Code here
-
+  function dragonMapper(array){
+    let dragon = array.map((element) =>{
+       return element + '...here be dragons';
+    })
+    return dragon
+  }
 
 
 //////////////////PROBLEM 2////////////////////
 
-//Write a function called cookieLoversOnly that takes 
-//in an array and filters out every object that
-//does NOT have the key favoriteCookie.
-//cookieLoversOnly should return the filtered array.
+// Write a function called cookieLoversOnly that takes 
+// in an array and filters out every object that
+// does NOT have the key favoriteCookie.
+// cookieLoversOnly should return the filtered array.
   
   //Code here
-
+function cookieLoversOnly(arr) {
+  let filteredCookies = arr.filter((element) =>{
+   return element.favoriteCookie
+  })
+  return filteredCookies
+}
 
 //////////////////PROBLEM 3////////////////////
 
-//Write a function called changeValue that takes 
-//in an array, and a callback function.
-//changeValue should invoke the callback function 
-//for every element in the array. 
-//changeValue should pass the current element into 
-//the callback function as an argument every time it is invoked.
-//Hint: there is an array method for this.
+// Write a function called changeValue that takes 
+// in an array, and a callback function.
+// changeValue should invoke the callback function 
+// for every element in the array. 
+// changeValue should pass the current element into 
+// the callback function as an argument every time it is invoked.
+// Hint: there is an array method for this.
 
 
   //Code here
-
+function changeValue(array){
+array.cb
+}
 
 
 //////////////////PROBLEM 4////////////////////
@@ -47,7 +59,12 @@
 //Return the product.
   
   //Code here
-
+function findProduct(array){
+  let product = array.reduce((acc, element) => {
+    return acc * element
+  })
+  return product
+}
 
 //////////////////PROBLEM 5////////////////////
 
@@ -64,7 +81,11 @@
 // cipherize will return: "d"
 
   //Code here
-
+  function cipherize(array, string){
+    let index = array.indexOf(string);
+    let char = string.charAt(index);
+    return char
+  }
 
 
 //////////////////PROBLEM 6////////////////////
@@ -75,3 +96,9 @@
 //apart, reversing it, and putting it back together again.
 
   //Code here
+function reverseMe(string){
+  let split = string.split('');
+  let reverseMe = split.reverse();
+  let result = reverseMe.join('');
+  return result
+}
